@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package assignment1retry;
+import java.lang.Math;
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author 780273
+ */
+public class Assignment1retry {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int Length =0 , Width=0, Area=0;
+        Scanner best= new Scanner(System.in); 
+        System.out.println( "Enter Length and Width for the area of a Rectangle");
+        System.out.println( "Enter Length:" );
+        System.out.println( "Enter Width:");
+        Length = best.nextInt();
+        Area = Length * Width;
+        System.out.println( "The area of the Rectangle is" + Area);
+        best.close();
+        
+        System.out.println( "Enter Radius for the Area of a Circle");
+        System.out.println( "Enter Radius");
+        System.out.println( "The area of the Rectangle is" + Area);
+
+    }
+    
+
+}
