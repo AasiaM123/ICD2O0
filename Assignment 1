@@ -1,39 +1,52 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package assignment1retry;
-import java.lang.Math;
-import java.util.Scanner;
+public class Assignment1 {
 
-
-/**
- *
- * @author 780273
- */
-public class Assignment1retry {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        int Length =0 , Width=0, Area=0;
-        Scanner best= new Scanner(System.in); 
-        System.out.println( "Enter Length and Width for the area of a Rectangle");
-        System.out.println( "Enter Length:" );
-        System.out.println( "Enter Width:");
-        Length = best.nextInt();
-        Area = Length * Width;
-        System.out.println( "The area of the Rectangle is" + Area);
-        best.close();
-        
-        System.out.println( "Enter Radius for the Area of a Circle");
-        System.out.println( "Enter Radius");
-        System.out.println( "The area of the Rectangle is" + Area);
+        // Task 1 - Write Java code that computes the area of a rectangle where the user enters length and width.
+       
+        System.out.println("Task 1: Compute the area of a rectangle");
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter Length: ");
+        double length = reader.nextDouble();
+        System.out.print("Enter Width: ");
+        double width = reader.nextDouble();
 
-    }
-    
+        double area = length * width;
+        System.out.printf("The area is %.2f\n2", area);
 
+        // Task 2 - Write Java code that computes the area of a circle with radius entered by the user. (remember Math.PI). Formula for circle area:
+        System.out.println("Task 2: Compute the area of a circle");
+        System.out.print("Enter Radius: ");
+        double radius = reader.nextDouble();
+        double circleArea = Math.PI*radius*radius;
+       
+        System.out.printf("Area of the Circle: %.2f\n", circleArea);
+       
+        // Task 3: Write a Java program that computes the surface area and volume of a cylinder that has height and radius entered by the user. Volume:
+        System.out.println("Task 3: Compute the surface area and volume of a cylinder");
+        System.out.print("Enter Height: ");
+        double height = reader.nextDouble();
+        System.out.print("Enter Radius: ");
+        radius = reader.nextDouble();
+       
+        // Compute Volume
+        double volume = Math.PI * radius * radius * height;
+        System.out.printf("The volume of the Cylinder is: %.2f\n", volume);
+       
+        // Compute Surface Area
+        double surfaceArea = (2 * Math.PI * radius * height) + (2 * Math.PI * radius * radius);
+        System.out.printf("The Surface Area is: %.2f\n", surfaceArea);
+       
+        // Task 4 - Calculate period of pendulum
+        System.out.println("Task 4: Compute period of pendulum");
+        System.out.print("Enter Lenght of Pendulum: ");
+        double pendulumLength = reader.nextDouble();
+       
+        // Compute pendulums' period
+        double pendulumPeriod = 2 * Math.PI * Math.pow(pendulumLength/9.8, 0.5);
+        System.out.printf("The period of the Pendulum is: %.2f\n", pendulumPeriod);
+       
+        reader.close();
+       
+    }  
 }
+
