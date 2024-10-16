@@ -1,4 +1,8 @@
 //Lesson 5
+public class Lesson 3 {
+
+  public static void main(String[] args) {
+
      Scanner sc = new Scanner(System.in);
         //The user is asked for their year of birth and their age.
         //Double the birth year, then add 5.
@@ -16,4 +20,5 @@
         year = year/100;
         System.out.println(year);
 
-
+}
+}
