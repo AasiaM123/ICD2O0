@@ -1,6 +1,6 @@
 //Lesson 4
 
-public class Lesson 3 {
+public class Lesson4 {
 
   public static void main(String[] args) {
     int amount = 24;
