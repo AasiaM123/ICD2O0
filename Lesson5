@@ -3,22 +3,22 @@ public class Lesson 3 {
 
   public static void main(String[] args) {
 
-     Scanner sc = new Scanner(System.in);
-        //The user is asked for their year of birth and their age.
-        //Double the birth year, then add 5.
-        //Multiply the resyult of the last step by 50, then add their age.
-        //Subtract 250 from the result of the last calculation, then divide by 100.
-        // Print the result and interpret it for the user.
-        System.out.print("What is your year of birth: " );
-        int year = sc.nextInt();
-        System.out.print("What is your age: " );
-        int age = sc.nextInt();
-        year = 2 * year + 5;
-        year = year * 50;
-        year = year + age;
-        year = year - 250;
-        year = year/100;
-        System.out.println(year);
+      Scanner sc = new Scanner(System.in);
+      //The user is asked for their year of birth and their age.
+      //Double the birth year, then add 5.
+      //Multiply the resyult of the last step by 50, then add their age.
+      //Subtract 250 from the result of the last calculation, then divide by 100.
+      // Print the result and interpret it for the user.
+      System.out.print("What is your year of birth: " );
+      int year = sc.nextInt();
+      System.out.print("What is your age: " );
+      int age = sc.nextInt();
+      year = 2 * year + 5;
+      year = year * 50;
+      year = year + age;
+      year = year - 250;
+      year = year/100;
+      System.out.println(year);
 
-}
+  }
 }
