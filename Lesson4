@@ -1,1 +1,8 @@
 
+//Lesson 4
+int amount = 24;
+System.out.println(24);
+System.out.println("Two dozen is: " + amount);
+int amount = 7*4;
+System.out.println("forty-two is: " + amount);
+//There are no bugs in the first statement. It means the variable is now what the variable was declared before + 1 
