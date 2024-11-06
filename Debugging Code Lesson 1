@@ -1,8 +1,14 @@
-/* 
- * Debugging L1: Numbers
- */
+//class Main {
+//public static void main(String[] args) {
+  
+//  System.out.println(6*4);
+
+//  }
+//}
+
 class Main {
-  public static void Main(String [] args) {
-    system.out.println()
+public static void main(String[] args) {
+  
+  System.out.println(6*4);
+
   }
-}
