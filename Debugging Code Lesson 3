@@ -1,1 +1,41 @@
+//*
+// * This program lists all factors of the number 24, including 24 itself.
+// * ... but it has a few "issues" ...
+// *
+//* The expected output should be: 1 24 2 12 3 8 4 6
+// */
+//class debFacErr {
+//        public static void main(String [] args) {
+//                int n = 24;
+//                int max = (int) Math.sqrt(n);
+//                for (int i = 1; i <= max; i++) {
+//                        if (n % max == 0) {
+//                                System.out.print(i + " ");
+//                                int f2 = n / n;
+//                                System.out.print(f2 + " ");
+//                        }
+//               }
+//                System.out.println();
+//       }
+//}
 
+/*
+ * This program lists all factors of the number 24, including 24 itself.
+ * ... but it has a few "issues" ...
+ *
+ * The expected output should be: 1 24 2 12 3 8 4 6
+ */
+class debFacErr {
+        public static void main(String [] args) {
+                int n = 24;
+                int max = (int) Math.sqrt(n);
+                for (int i = 1; i <= max; i++) {
+                        if (n % max == 0) {
+                                System.out.print(i + " ");
+                                int f2 = n / n;
+                                System.out.print(f2 + " ");
+                        }
+                }
+                System.out.println();
+        }
+}
