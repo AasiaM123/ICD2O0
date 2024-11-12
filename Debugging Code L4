@@ -1,0 +1,26 @@
+//class Main {
+//  public static void main(String[] args) {
+    // Make any needed corrections to the code below until it runs
+    // without errors.
+
+//    lastMonth = "August";
+
+//    System.out.println("The last month was %d.\n", lastmonth);
+
+//    //////////// End of tasks /////////////////////
+//  }
+//}
+
+
+class Main {
+  public static void main(String[] args) {
+    // Make any needed corrections to the code below until it runs
+    // without errors.
+
+    String lastmonth = "December";
+
+    System.out.printf("The last month was %s.\n", lastmonth);
+
+    //////////// End of tasks /////////////////////
+  }
+}
