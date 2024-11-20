@@ -15,26 +15,4 @@
 //    }
 //}
 
-import java.util.Scanner;
-
-public class IntegerInputExample {
-  public static void main(String[] args) {
-    
-  try {
-    
-        Scanner kb = new Scanner(System.in); //open for keyboard input
-        System.out.print("Enter an integer (a): ");
-        double a = kb.nextDouble();
-        System.out.print("Enter an integer (b): ");
-        double b = kb.nextDouble();
-        double result = a/b; // perform division
-        System.out.println(" the result of )
-           
-            System.out.println("You entered: " + number);
-        } catch (Exception e) {
-            System.out.println("Invalid input. Please enter a valid integer.");
-        } 
-        kb.close();//close the scanner
-    }
-}
 
