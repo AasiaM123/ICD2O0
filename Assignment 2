@@ -1,6 +1,32 @@
+public class Assignment2 {
+
+    public static void main(String[] args) {
+
+/*
+Aasia Mansoor 780273
+Date: 27 November, 2024
+Course: Grade 10 Comp Sci
+Title: Collatz Conjecture 
+Description: A program which outputs a series of numbers based on an algorithm.
+VARIABLE DICTIONARY: 
+...
+...
+...
+*/
+
+
+import java.util.Scanner;
 class Main {
+
   public static void main(String[] args) {
     Scanner kbd = new Scanner(System.in);
-    String greeting = new String();
+    String a = new String();
 
     System.out.print(" Please enter a whole number: ");
+    int number = sc.nextIntegar();
+  if { number = 1)  
+   
+    
+  }
+}
+}
