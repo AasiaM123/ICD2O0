@@ -14,19 +14,45 @@ VARIABLE DICTIONARY:
 ...
 */
 
-
 import java.util.Scanner;
+
 class Main {
-
-  public static void main(String[] args) {
-    Scanner kbd = new Scanner(System.in);
-    String a = new String();
-
-    System.out.print(" Please enter a whole number: ");
-    int number = sc.nextIntegar();
-  if { number = 1)  
+ public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   char more = ' ';
+  
+  
    
-    
-  }
-}
-}
+   do {
+   System.out.print("Enter a whole number > 0: ");
+   int n = sc.nextInt();
+   int highestvalue = n;
+   int termcount = 0;
+   System.out.print("The Collatz sequence for n = " + n + " is ");
+   while (n > 1) {
+       termcount++;
+       if (n % 2 == 0) {
+            n = n / 2;
+               
+            } else {
+            n = 3 * n + 1;
+            }
+            if (n> highestvalue){
+                highestvalue = n;
+            }
+            System.out.printf("%,d", n);
+            if (n!= 1) {
+            System.out.print("; ");
+            }else{
+            System.out.print(" ");
+            }
+    }
+   
+   System.out.println("\n" + "Number of terms = " + termcount);
+   System.out.println( "Highest value reached: " + highestvalue);
+      
+      System.out.println("Do another? (y/n) ");
+      more = sc.next().toLowerCase().charAt(0);
+  } while (more == 'y');
+   }
+}   
