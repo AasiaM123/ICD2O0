@@ -1,18 +1,3 @@
-public class Assignment2 {
-
-    public static void main(String[] args) {
-
-/*
-Aasia Mansoor 780273
-Date: 27 November, 2024
-Course: Grade 10 Comp Sci
-Title: Collatz Conjecture 
-Description: A program which outputs a series of numbers based on an algorithm.
-VARIABLE DICTIONARY: 
-...
-...
-...
-*/
 
 import java.util.Scanner;
 
@@ -27,8 +12,8 @@ class Main {
    System.out.print("Enter a whole number > 0: ");
    int n = sc.nextInt();
    int highestvalue = n;
-   int termcount = 0;
-   System.out.print("The Collatz sequence for n = " + n + " is ");
+   int termcount = 1;
+   System.out.print("The Collatz sequence for n = " + n + " is "+ n + "; ");
    while (n > 1) {
        termcount++;
        if (n % 2 == 0) {
@@ -54,5 +39,10 @@ class Main {
       System.out.println("Do another? (y/n) ");
       more = sc.next().toLowerCase().charAt(0);
   } while (more == 'y');
+  
+  
+    System.out.println("Goodbye!");
+    sc.close();
+
    }
 }   
