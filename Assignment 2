@@ -1,3 +1,15 @@
+/*
+Student: Aasia 780273
+Date: Dec 5th, 2024
+Course: ICD 2O0
+Assignment: Assignment 2, Collatz Conjecture
+Description: A code that finds the Collatz Conjecture (array of numbers) for a variable, the number of terms, and the highest value reached.
+Variable Dictoniary:
+-more (char) = Placeholder for variable
+-highestvalue(int)= Placeholder for the highest value reached
+-termcount (int) = Placeholder for the number of terms reached
+
+*/
 
 import java.util.Scanner;
 
@@ -9,21 +21,21 @@ class Main {
   
    
    do {
-   System.out.print("Enter a whole number > 0: ");
+   System.out.print("Enter a whole number > 0: ");// The user inputs a whole number bigger than 0
    int n = sc.nextInt();
-   int highestvalue = n;
-   int termcount = 1;
+   int highestvalue = n;// Defines the highest value
+   int termcount = 1;// termcount starts at number 1
    System.out.print("The Collatz sequence for n = " + n + " is "+ n + "; ");
    while (n > 1) {
        termcount++;
-       if (n % 2 == 0) {
+       if (n % 2 == 0) {// if the number is even it gets divided by 2
             n = n / 2;
                
             } else {
-            n = 3 * n + 1;
+            n = 3 * n + 1;// if the number is odd it is multipled by 2 and 1 is then added
             }
-            if (n> highestvalue){
-                highestvalue = n;
+            if (n> highestvalue){// code finds highest number
+                highestvalue = n;// redifines the hight value
             }
             System.out.printf("%,d", n);
             if (n!= 1) {
@@ -33,16 +45,16 @@ class Main {
             }
     }
    
-   System.out.println("\n" + "Number of terms = " + termcount);
-   System.out.println( "Highest value reached: " + highestvalue);
+   System.out.println("\n" + "Number of terms = " + termcount);// prints number of terms
+   System.out.println( "Highest value reached: " + highestvalue);// prints highest value
       
-      System.out.println("Do another? (y/n) ");
+      System.out.println("Do another? (y/n) ");// asks user if they want the code to run again
       more = sc.next().toLowerCase().charAt(0);
   } while (more == 'y');
   
   
     System.out.println("Goodbye!");
-    sc.close();
+    sc.close();//code ends
 
    }
 }   
