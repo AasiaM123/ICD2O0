@@ -1,1 +1,22 @@
+import java.util.Scanner;
 
+class Main {
+ public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+   char = a;
+  System.out.print("How many games do you want to play?"); // User chooses how many games they want to play
+   int numbergames = sc.nextInt();
+   for (int n = 0; n < numbergames; n++){
+     System.out.println("Please enter your move. (r = rock, p = paper, s = scissors).");
+       char playerchoice = sc.next().toLowerCase().charAt(0); // Runs code regardless of whether the user types with a capital y/n or not.
+       a = .random();
+       System.out.print("a);
+       
+      if(playerchoice != 'r' && playerchoice != 's' && playerchoice != 'p'){
+          System.out.println("Please enter a valid input");
+      }
+  }
+     
+
+   }
+   }
