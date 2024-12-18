@@ -4,54 +4,54 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-       
+
         System.out.print("How many games would you like to play? "); // ask the user the number of rounds they want
         int numGames = sc.nextInt();
-       
-       int playerWins = 0;
-       int computerWins = 0;
-       int ties = 0;
 
-       
-    for (int n = 0; n < numGames; n++) {
-         System.out.print("Select your move (r = rock; p = paper, and s` = scissors): ");
-          char playerchoice = sc.next().toLowerCase().charAt(0);
-       
-    if(playerchoice != 'r' &&  playerchoice != 's' && playerchoice != 'p' ){
-          System.out.println("Please enter (r = rock; p = paper, and s` = scissors)");
-         
-        }
-        int computerRandomChoice = (int)(3 * Math.random());
-        char computerChoice = ' ';
-         
-         if (computerRandomChoice == 0) {
+        int playerWins = 0;
+        int computerWins = 0;
+        int ties = 0;
+
+
+        for (int n = 0; n < numGames; n++) {
+            System.out.print("Select your move (r = rock; p = paper, and s` = scissors): ");
+            char playerchoice = sc.next().toLowerCase().charAt(0);
+
+            if(playerchoice != 'r' &&  playerchoice != 's' && playerchoice != 'p' ){
+                System.out.println("Please enter (r = rock; p = paper, and s` = scissors)");
+
+            }
+            int computerRandomChoice = (int)(3 * Math.random());
+            char computerChoice = ' ';
+
+            if (computerRandomChoice == 0) {
                 computerChoice = 'r'; // Rock
             } else if (computerRandomChoice == 1) {
                 computerChoice = 'p'; // Paper
             } else {
                 computerChoice = 's'; // Scissors
             }
-        System.out.println("Computer chose: " + computerChoice);
-       
-        if (playerchoice == computerChoice){
-            System.out.println("---It's a tie!!--- ");
-            ties++;
-        } else if ((playerchoice =='r' && computerChoice =='s') ||
-                   (playerchoice =='p' && computerChoice =='r')||
-                   (playerchoice =='s' && computerChoice =='p')) {
-             System.out.println("You win!");
-             playerWins++;
-        }else {
+            System.out.println("Computer chose: " + computerChoice);
+
+            if (playerchoice == computerChoice){
+                System.out.println("---It's a tie!!--- ");
+                ties++;
+            } else if ((playerchoice =='r' && computerChoice =='s') ||
+                    (playerchoice =='p' && computerChoice =='r')||
+                    (playerchoice =='s' && computerChoice =='p')) {
+                System.out.println("You win!");
+                playerWins++;
+            }else {
                 System.out.println("Computer wins!");
                 computerWins++;
             }
         }
-          System.out.println("\nFinal Score:");
-          System.out.println("Player Wins: " + playerWins);
-          System.out.println("Computer Wins: " + computerWins);
-          System.out.println("Ties: " + ties);
-         
-          sc.close();
+        System.out.println("\nFinal Score:");
+        System.out.println("Player Wins: " + playerWins);
+        System.out.println("Computer Wins: " + computerWins);
+        System.out.println("Ties: " + ties);
+
+        sc.close();
     }
-   }  
+}
 
