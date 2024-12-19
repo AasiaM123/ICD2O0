@@ -1,3 +1,22 @@
+/*
+Student: Aasia 780273
+Date: Dec 18th, 2024
+Course: ICD 2O0
+Assignment: Assignment 3, Rock-Paper-Scissors
+Description: A code that allows the user to play Rock-Paper-Scissor with a computer
+Variable Dictoniary:
+- more (char) = Placeholder for variable
+- sc (Scanner) = Object to read input
+- numGames (int) = No of games to play
+- computerWins (int) = Tally of games the computer won
+- playerWins (int) = Tally of games the user won
+- ties (int) = How many games ended in ties
+- playerchoice (char) = Player's choice of 'r' or 'p' or 's'
+- computerRandomChoice = A random number between 0-2 inclusive
+- computerChoice (char) = A character based on the above
+
+*/
+
 import java.util.Scanner;
 
 public class Main {
