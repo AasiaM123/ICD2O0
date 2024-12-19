@@ -46,7 +46,7 @@ public class Assignment3 {
             if (computerRandomChoice == 0) {
                 computerChoice = 'r'; // Rock
             } else if (computerRandomChoice == 1) {
-                computerChoice = 'p'; // Paper
+                computerChoice = 'p'; // Paperbb
             } else {
                 computerChoice = 's'; // Scissors
             }
