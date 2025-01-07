@@ -1,0 +1,8 @@
+class DebugLoopsA {
+    public static void main(String [] args) {
+        for (int x = 1; x <= 12; x++) {
+            double sr = Math.sqrt(x);
+            System.out.printf("%d %1.4f\n", x, sr);
+        }
+    }
+}
