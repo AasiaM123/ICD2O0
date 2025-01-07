@@ -1,0 +1,34 @@
+import java.util.Scanner;
+import java.io.*;
+
+class Numread {
+    public static void main(String [] args) {
+        int hi = -1;
+        int lo = 999;
+        try {
+            Scanner fh = new Scanner(new File("numlist.txt"));
+            while (fh.hasNextInt()) {
+                int n = fh.nextInt();
+
+                if (n > hi) {
+                    hi = n;
+                }
+
+                if (n < lo) {
+                    lo = n;
+                }
+
+                System.out.println(n);
+                // read the next number (N)
+                // if N is bigger than hi, then hi = N
+                // if N is lower than lo, then lo = N
+                // print the number
+            }
+            fh.close(); // close the file
+            System.out.println("Highest number is: " + hi);
+            System.out.println("Lowest number is: " + lo);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
