@@ -1,0 +1,14 @@
+
+public class Emoji {
+    public static void main(String[] args) {
+        // Your code starts here!
+        for (int smiley = 0x1f600; smiley <= 0x1f64f; smiley++) {
+            String uChar = new String(Character.toChars((int) smiley));
+            if (smiley % 10 == 0) {
+                System.out.println("\n");
+            }
+            System.out.printf("%4h  %s\t", smiley, uChar);
+            // Your code stops here!
+        }
+    }
+}
