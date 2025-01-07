@@ -1,0 +1,13 @@
+import java.lang.Math;
+
+class Table {
+    public static void main(String [] args) {
+        System.out.println("   x     sqrt(x)     x^2     x^3");
+        for (int x = 0; x < 11; x++) {
+            double sr = Math.sqrt(x);
+            double square = Math.pow(x, 2);
+            double cube = Math.pow(x, 3);
+            System.out.printf("%3d       %.4f  %5.0f   %5.0f\n", x, sr,square, cube);
+        }
+    }
+}
