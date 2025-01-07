@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class GuessingGame {
+    public static void main(String [] args) {
+        Scanner kb = new Scanner(System.in);
+        int numberToGuess = 5;
+        int tries = 0;
+        boolean valid = false;
+        while (!valid) {
+            System.out.print("Guess a number between 1 and 10: ");
+            int guess = kb.nextInt();
+            if (guess == numberToGuess) {
+                valid = true;
+                System.out.println("Right answer!");
+            } else {
+                System.out.println("Incorrect");
+                tries = tries + 1;
+                if (tries >= 6) {
+                    System.out.println("Only 5 tries allowed");
+                    valid = true;
+                }
+            }
+        }
+    }
+}
