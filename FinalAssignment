@@ -8,10 +8,31 @@ Variable Dictoniary:
 
 
 */
-
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-class Main {
- public static void main(String[] args) {
+public class CreditRiverCreditCards {
+    public static void main(String[] args) {
 
-ir= 0.28;
+        try {
+            File file = new File("ledger.dat");
+            Scanner scanner = new Scanner(file);
+            scanner.useDelimiter(System.lineSeparator());
+
+    
+            int tally = 0;
+
+            while (scanner.hasNext()) {
+                String line = scanner.next();
+                System.out.println(line);
+
+            }
+            scanner.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+}
